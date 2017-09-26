@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="服务在后台。没错，Android 中的服务是存在后台中的，它适合去执行哪些不需要与用户交互的但是还被要求长期运行的任务。比如，你在聊QQ的时候，喜欢听音乐，这时候你的音乐就是在后台挂着，即使你开了另外一个应用程序，当前的应用程序还是不会被关闭。
+  不过需要说明的是，Service服务不是运行在一个独立的程序中的，而是依赖于创建服务的这个应用程序中的。如果这个程序被杀死，服务也会停止。
+  前面说服务是在后台的。但是实际上服务不会自动开启线程，所有的服务都是在主线程中运行的。而我们知道主线程不能执行耗时的操作，否则会引起线程阻塞，所以我们需要在服务上创建子线程，由子线程去实现需要的具体工作。"
+    android:textSize="15sp"
+    />
+
+
+</LinearLayout>
